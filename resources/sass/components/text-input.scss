@@ -1,0 +1,41 @@
+$border-radius: 0px;
+$border: none;
+
+$height: 50px;
+
+$input-colour: #F5F4F4;
+$font-colour: #000;
+$error-colour: #EA1313;
+
+.text-input {
+    width: 100%;
+    height: $height;
+    line-height: $height;
+    border-radius: $border-radius;
+    background-color: $input-colour;
+    color: $font-colour;
+    border: $border;
+}
+
+.text-input::placeholder {
+    color: lighten($font-colour, 50%);
+}
+
+.text-input--error {
+    border: 1px solid $error-colour !important;
+}
+
+.text-input__error {
+    color: $error-colour;
+    font-size: 12px;
+    display: none;
+}
+
+.text-input__icon {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 42.5px;
+    right: 25px;
+    display: none;
+}
